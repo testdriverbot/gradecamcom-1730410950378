@@ -1,0 +1,16 @@
+version: 4.0.78
+steps:
+  - prompt: If a cookie banner appears, click to accept cookies.
+    commands:
+      - command: hover-text
+        text: Accept Cookies
+        description: button to accept cookies
+        action: click
+  - prompt: If a cookie banner appears, click to accept cookies.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: I Agree
+        description: button to accept cookies
+        action: click
