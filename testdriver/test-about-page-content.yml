@@ -1,0 +1,18 @@
+version: 4.0.78
+steps:
+  - prompt: Click on "About" in the navigation menu.
+    commands:
+      - command: hover-text
+        text: About
+        description: link in the navigation menu
+        action: click
+  - prompt: Assert that the about page is displayed.
+    commands:
+      - command: assert
+        expect: the "About Us" text is visible on the page
+  - prompt: >-
+      Confirm presence of company history or mission statement.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: the text "Founded in 1998" or "our mission" is visible on the page
