@@ -1,0 +1,14 @@
+version: 4.0.78
+steps:
+  - prompt: Locate social media links in the footer.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Locate social media links in the footer.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Locate social media links in the footer.
+    commands:
+      - command: scroll
+        direction: down
