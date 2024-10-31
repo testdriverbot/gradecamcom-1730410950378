@@ -1,0 +1,14 @@
+version: 4.0.78
+steps:
+  - prompt: Locate the newsletter signup form on the homepage.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Locate the newsletter signup form on the homepage.
+    commands:
+      - command: scroll
+        direction: down
+  - prompt: Locate the newsletter signup form on the homepage.
+    commands:
+      - command: scroll
+        direction: down
