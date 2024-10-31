@@ -1,0 +1,18 @@
+version: 4.0.78
+steps:
+  - prompt: Click on "Business" in the navigation menu.
+    commands:
+      - command: hover-text
+        text: Business
+        description: navigation menu item
+        action: click
+  - prompt: Assert that the business section page loads.
+    commands:
+      - command: assert
+        expect: Gradient for Business
+  - prompt: >-
+      Verify that key business solutions or products are displayed.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: Create your key
