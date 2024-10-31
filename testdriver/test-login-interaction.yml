@@ -1,0 +1,12 @@
+version: 4.0.78
+steps:
+  - prompt: Click on the "Login" button in the header.
+    commands:
+      - command: hover-text
+        text: Login
+        description: Login button in the header
+        action: click
+  - prompt: Assert that a login form is shown.
+    commands:
+      - command: assert
+        expect: a login form is displayed with fields for username and password
