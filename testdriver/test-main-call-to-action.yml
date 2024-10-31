@@ -1,0 +1,46 @@
+version: 4.0.78
+steps:
+  - prompt: Click on "Request Demo".
+    commands:
+      - command: hover-text
+        text: Request Demo
+        description: button to request a demo
+        action: click
+  - prompt: Assert that a demo request form or page is displayed.
+    commands:
+      - command: assert
+        expect: the demo request form is displayed
+  - prompt: Complete the form if present.
+    commands:
+      - command: hover-text
+        text: First Name
+        description: first name input field
+        action: click
+      - command: type
+        text: John
+  - prompt: Complete the form if present.
+    commands:
+      - command: hover-text
+        text: Last Name
+        description: last name input field
+        action: click
+      - command: type
+        text: Doe
+      - command: hover-text
+        text: Phone
+        description: phone input field
+        action: click
+      - command: type
+        text: 1234567890
+      - command: hover-text
+        text: Email
+        description: email input field
+        action: click
+      - command: type
+        text: john.doe@example.com
+  - prompt: Complete the form if present.
+    commands:
+      - command: hover-text
+        text: Education
+        description: education option in the product selection
+        action: click
